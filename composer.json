@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Root\\Www\\": "local/lib/"
+        }
+    },
+    "require": {}
+}
