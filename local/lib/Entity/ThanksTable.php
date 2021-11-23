@@ -39,7 +39,11 @@ class ThanksTable extends DataManager
                 UserTable::class,
                 Join::on('this.USER', 'ref.ID')
             )),
-            new Fields\Relations\Reference('DEP', SectionTable::class, Join::on('this.DEPARTMENT', 'ref.ID'))
+            (new Fields\Relations\Reference(
+                'DEP',
+                SectionTable::class, 
+                Join::on('this.DEPARTMENT', 'ref.ID')
+            )),
         ];
     }
 }
